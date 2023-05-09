@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de funcionarios</title>
+    <style>
+
+    body
+    {
+        font-size: arial;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+    
+
+    }
+
+    .cadastro
+    {
+      
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+     
+       
+    }
+
+   .direita
+   {
+    height: 40px;
+    width: 315px;
+    justify-content: space-around;
+    margin-left: 100px;
+
+   }
+
+   .esquerda
+   {
+    height: 40px;
+    width: 315px;
+    justify-content: space-around;
+
+   }
+
+    .cadastro
+    {
+        background-color: lightgray;
+        width: 650px;
+        height: 380px;
+        position: relative;
+    }
+
+    .d1
+    {
+        width: 300px;
+    }
+   
+    .d2
+    {
+        width: 300px;
+    }
+
+    .botoes
+    {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    </style>
+</head>
+<body>
+
+
+    <fieldset class="cadastro">
+        
+        <legend>Cadastro de Funcionarios</legend>
+
+        <div class="d1">
+            <div class="esquerda">
+                CPF: <input type="text" class="caixa" id="cpf">
+            </div>
+
+            <div class="esquerda">
+                Nome: <input type="text" class="caixa" id="nome">
+            </div>
+            <div class="esquerda">
+                Data de nascimento: <input type="text" class="caixa" id="data">
+            </div>
+            <div class="esquerda">
+                Endereço: <input type="text" class="caixa" id="endereco">
+            </div>
+            <div class="esquerda">
+                Cidade: <input type="text" class="caixa" id="cidade">
+            </div>
+        </div>
+
+        <div class="d2">
+            <div class="direita">
+                Telefone: <input type="text" class="caixa2" id="telefone">
+            </div>
+            <div class="direita">
+                Sexo: <input type="radio" class="caixa2" id="sexo">M
+                &nbsp;
+                <input type="radio" class="caixa2" id="sexo">F
+            </div> 
+            <div class="direita">
+                Bairro: <input type="text" class="caixa2" id="bairro">
+            </div>
+            <div class="direita">
+                Estado: 
+                <Select id="estado" class="estado">
+                    <option>São Paulo</option>
+                    <option>Santa Catarina</option>
+                    option>Rio Grande do Sul</option>
+                </Select>
+            </div>
+        </div> 
+        
+ 
+        
+    
+      
+
+    <div class="botoes">
+        <button onclick="" class="botao">
+        <img src="inserir.png" style="height: 25px; width: 25px;">
+        </button>
+        <button class="botao">
+            <img src="alterar.png" style="height: 25px; width: 25px;">
+        </button>
+        <button class="botao">
+            <img src="excluir.png" style="height: 25px; width: 25px;">
+        </button>
+        <button class="botao">
+            <img src="listar.png" style="height: 25px; width: 25px;">
+        </button>
+    </div>  
+    </fieldset>
+
+      
+
+    
+    
+</body>
+</html>
